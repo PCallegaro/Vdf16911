@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coletar Informações</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>16911 e NBA</h1>
+        <div class="form-container">
+            <div class="form-left">
+                <label for="equipa">Equipa:</label>
+                <select id="equipa">
+                    <option value="16911_PT">16911_PT</option>
+                    <option value="NBA_PT">NBA_PT</option>
+                </select>
+                <label for="id_rc_pre_contrato">ID RC Pré-Contrato:</label>
+                <input type="text" id="id_rc_pre_contrato">
+                <label for="conta_titular">Conta do Titular:</label>
+                <input type="text" id="conta_titular" maxlength="9">
+                <label for="nome_cliente">Nome Cliente:</label>
+                <input type="text" id="nome_cliente">
+                <label for="morada">Morada:</label>
+                <input type="text" id="morada">
+                <label for="email">Endereço Email:</label>
+                <input type="email" id="email">
+                <label for="pacote">Pacote:</label>
+                <input type="text" id="pacote">
+                <label for="cartao_mandatorio">Nº Cartão móvel (Mandatório):</label>
+                <input type="text" id="cartao_mandatorio" maxlength="9">
+                <label for="cartao_opcional1">Nº Cartão móvel (Opcional 1):</label>
+                <input type="text" id="cartao_opcional1" maxlength="9">
+                <label for="cartao_opcional2">Nº Cartão móvel (Opcional 2):</label>
+                <input type="text" id="cartao_opcional2" maxlength="9">
+                <label for="cartao_opcional3">Nº Cartão móvel (Opcional 3):</label>
+                <input type="text" id="cartao_opcional3" maxlength="9">
+                <label for="troca_equipamentos">Troca de equipamentos?</label>
+                <select id="troca_equipamentos">
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+                </select>
+                <label for="equipamentos">Equipamentos:</label>
+                <input type="text" id="equipamentos">
+                <label for="alteracao_morada_sn">Alteração de morada instalação S/N?:</label>
+                <select id="alteracao_morada_sn">
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+                </select>
+                <button onclick="gerarTexto()">Gerar Texto</button>
+                <button onclick="copiarTexto()">Copiar Texto</button>
+            </div>
+            <div class="form-right">
+                <textarea id="resultado_text" readonly></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
